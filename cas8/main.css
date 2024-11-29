@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+   }
+   
+   a:link {
+    color: blue;
+   }
+   
+   a:visited {
+    color: #437A16;
+   }
+   
+   a:hover {
+    background-color: red;
+    cursor: pointer;
+   }
+   
+   a:focus {
+    background-color: #BAE498;
+   }
+   p:hover {
+    color: blue;
+    cursor: pointer;
+   }
+   #name:focus {
+  width: 400px;
+  border: 3px solid red;
+   }

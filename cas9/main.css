@@ -1,0 +1,80 @@
+/* .box {
+    background: #2db34a;
+    border-radius: 6px;
+    height: 95px;
+    width: 95px;
+    line-height: 95px;
+    text-align: center;
+    
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.35,.99,.86,-0.02);
+  }
+  .box:hover {
+    background: #ff7b29;
+  }
+  .box2 {
+    color: #fff;
+    background: #2db34a;
+    border-radius: 6px;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    / Shorthand Transition properties /
+    transition: color .2s linear .5s, border-radius 1s ease-in 1s;
+  }
+  .box2:hover {
+    color: #ff7b29;
+    border-radius: 50%;
+  } */
+  .box {
+    color: #fff;
+    background: #2db34a;
+    border-radius: 6px;
+    height: 100px;
+    width: 500px;
+    line-height: 95px;
+    text-align: center;
+    /* / Shorthand Transition properties / */
+   position: relative;
+   }
+
+
+  /* .box:hover {
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+   } */
+
+
+   @keyframes slide {
+    0% {
+      left: 0;
+      top: 0;
+      background-color: orchid;
+    }
+    50% {
+      left: 144px;
+      top: 600px;
+      background-color: red;
+    }
+    100% {
+      left: 488px;
+      top: 0;
+      background-color: blue;
+    }
+  }
+
+   .box:hover {
+    animation-name: slide;
+     animation-duration: 2s;
+     animation-timing-function: ease-in-out;
+     animation-delay: .5s;
+     animation-iteration-count: infinite;
+     animation: slide 2s ease-in-out .5s infinite alternate;
+   }
+
+   .box:active  {
+    animation-play-state: paused;
+   }
