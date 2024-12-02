@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+   
+    border: 3px solid yellow;
+}
+
+.one {
+    background-color: red;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.two {
+    height: 100px;
+    background-color: blue;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+}
+
+.three {
+    background-color: green;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+
+}

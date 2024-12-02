@@ -1,0 +1,93 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.relative {
+	position: relative;
+    width: 100%;
+    height: 100vh;
+	border: 3px solid #73AD21;
+} 
+	
+.absolute {
+	position: absolute;
+    left: 50%;
+	width: 200px;
+	height: 100px;
+	border: 3px solid #73AD21;
+    transform: translate(-50, -50)
+
+} */
+
+.glaven{
+    position: relative;
+    background-color: black;
+    width: 35px;
+    height: 430px;
+}
+
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: greenyellow;
+    color: white;
+}
+#one {
+    position: absolute;
+    top: 0px;
+
+
+    background-color: greenyellow;
+
+}
+#two {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 180px;
+    background-color: red;
+}
+
+#three {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 180px;
+    background-color: red;
+}
+
+#three {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 180px;
+    background-color: red;
+}
+#four {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 180px;
+    background-color: red;
+}
+
+#five {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: 180px;
+    background-color: red;
+}

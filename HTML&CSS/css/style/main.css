@@ -1,0 +1,76 @@
+/* .container {
+    background-color: green;
+
+}
+
+h1 {
+    color: yellow;
+} */
+/* p {
+    color: rgb(100, 100, 90, 0.5);
+}
+
+h2 {
+    color: #ee3e80;
+    opacity: 0.5;
+}
+h1 {
+    color:DarkCyan
+} */
+/* body {
+	background-color: #C8C8C8;
+	background-color: hsl(0,0%,78%);
+}
+p {
+	background-color: #ffffff;
+	background-color: hsla(0,100%,100%,0.5);
+} */
+
+@font-face {
+    font-family: "My Font";
+    src: url("myfont-regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("/static/OpenSans-Bold.ttf") format("truetype");
+}
+h1 {
+    font-family: "Open Sans Bold", sans-serif;
+}
+ h2 {
+    font-family: "My Font", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 3.5; */
+    word-spacing: 20px;
+ }
+ h2 span {
+    background-color: red;
+    vertical-align: center;
+  }
+ h1 {
+    font-family: "My Font", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+ }
+ p {
+    font-family: "My Font",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100;
+    max-width: 40%;
+
+ }
+
+ h1 {
+    /* font-style: oblique 50deg; */
+    text-transform: lowercase;
+    /* text-decoration: dotted; */
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+    text-decoration-line: line-through;
+ }
