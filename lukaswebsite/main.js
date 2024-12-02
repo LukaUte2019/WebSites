@@ -15,6 +15,11 @@
     window.AppInventor.setWebViewString("setcurrentwebpageashomepage");
   };
 
+  /**
+   * Runs the cash program. This program asks the user how much they have, and based on that, it tells the user what they should do.
+   * @memberof window
+   * @function runcashprogram
+   */
   function runcashprogram() {
     let cash = prompt('Enter Cash (Number only)');
 
@@ -31,6 +36,16 @@ else if (cash >= 35) {
   }
 
 
+  /**
+   * Prompts the user for a score and alerts the grade based on the following criteria:
+   *   - 80 and above: Grade 5
+   *   - 70-79: Grade 4
+   *   - 60-69: Grade 3
+   *   - below 60: Failed
+   * The grade is also logged to the console.
+   * @memberof window
+   * @function runscoregradeprogram
+   */
   function runscoregradeprogram() {
     let score = prompt('Enter Score');
 
@@ -109,6 +124,51 @@ if (score > 80) {
     // Web Browser app with the specified package and activity
     // The package name is: io.kodular.lukapravivlogovi.WebBrowser
     // The activity name is: io.kodular.lukapravivlogovi.WebBrowser.Screen1
-    window.AppInventor.setWebViewString("openandroidapp io.kodular.lukapravivlogovi.WebBrowser/io.kodular.lukapravivlogovi.WebBrowser.Screen1");
+    window.AppInventor.setWebViewString("openandroidapp io.kodular.lukapravivlogovi.WebBrowser/io.kodular.lukapravivlogovi.WebBrowser.Screen1/From JavaScript");
  };
 
+function runifandelsevariantsprogram() {
+let number1 = prompt("Enter Number 1");
+let number2 = prompt("Enter Number 2");
+
+// If and else case
+if(number1 != number2){
+    alert("The numbers are different!");
+} else {
+    alert("The numbers are the same!");
+}
+
+// Multiple cases if and else
+// The first case that is true, will be executed. If all are false, else is executed
+if(number1 === 0 && number2 === 0){
+    alert("Both numbers are zero!");
+} else if(number1 != number2){
+    alert("The numbers are different!");
+} else {
+    alert("The numbers are the same!");
+}
+
+// Two separate if statements
+// Both might be true and both might write something in the console, since they are separate
+if(number1 === 0 && number2 === 0){
+    alert("Both numbers are zero!");
+}
+
+if(number1 != number2){
+    alert("The numbers are different!");
+} else {
+    alert("The numbers are the same!");
+}
+
+// Nested if statements
+// If the first if is true, then the second nested one can be executed. Otherwise the nested if is skipped and the second else is executed
+if(typeof(number1) === "number" && typeof(number2) === "number"){
+    if(number1 != number2){
+        alert("The numbers are different!");
+    } else {
+        alert("The numbers are the same!");
+    }
+} else {
+    alert("Error. Wrong format. Please enter numbers.");
+}
+}
