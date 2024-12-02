@@ -15,7 +15,39 @@
     window.AppInventor.setWebViewString("setcurrentwebpageashomepage");
   };
 
+  function runcashprogram() {
+    let cash = prompt('Enter Cash (Number only)');
 
+if(cash >= 50){
+  document.write('<a href=https://www.google.com/search?q=restaurants+around+me> you should go out for a dinner and a movie </a> <a href=http://lukaserver.ddns.net> Go to site</a>');
+}
+else if (cash >= 35) {
+    document.write('<a href=https://www.google.com/search?q=restaurants+around+me> you should go out to a fine meal. </a> <a href=/> Go to site</a>');
+} else if (cash >= 12) {
+    document.write('<a href=https://netflix.com> you should go see a movie </a> <a href=/> Go to site</a>');
+} else {
+    document.write('<a href=https://www.google.com/search?q=magenta+tv+go> looks like you\'ll be watching TV </a> <a href=/> Go to site</a>')
+}
+  }
+
+
+  function runscoregradeprogram() {
+    let score = prompt('Enter Score');
+
+if (score > 80) {
+   alert('Grade 5');
+    console.log('Grade 5');
+}   else if (score > 70) {
+    alert('Grade 4');
+     console.log("Grade 4");
+    } else if (score > 60) {
+        alert('Grade 3');
+        console.log("Grade 3")
+    } else {
+        alert('Failed');
+        console.log("Failed")
+    } 
+  }
   /**
    * Alerts the user, logs a message, and sends a command to 
    * open the Instify Android app using AppInventor's WebView 
