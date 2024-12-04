@@ -139,7 +139,7 @@ else if (cash >= 35) {
     // Web Browser app with the specified package and activity
     // The package name is: io.kodular.lukapravivlogovi.WebBrowser
     // The activity name is: io.kodular.lukapravivlogovi.WebBrowser.Screen1
-    window.AppInventor.setWebViewString("openandroidapp io.kodular.lukapravivlogovi.WebBrowser/io.kodular.lukapravivlogovi.WebBrowser.Screen1/From JavaScript");
+    window.AppInventor.setWebViewString("openandroidapp io.kodular.lukapravivlogovi.WebBrowser/io.kodular.lukapravivlogovi.WebBrowser.Screen1/",prompt("Enter Website to open in the app"));
  };
 
 /**
