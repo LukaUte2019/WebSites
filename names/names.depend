@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1733942907 source:c:\users\lukap\desktop\program\names\main.cpp
+	<iostream>
+	<vector>
+	<string>
+
