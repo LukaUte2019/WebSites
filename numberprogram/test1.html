@@ -1,0 +1,439 @@
+<body onload="uiDoOnLoad()">
+    <div id="uiTooltip" style="position:absolute;display:none;background-color:lightyellow;padding:5px;border:1px;border-color:black;border-style:solid;"></div>
+    <table style="margin: auto;">
+    <tbody><tr><td>
+    <div class="fw_header">
+    <img src="../html/de/images/leer.gif" width="980px" height="90px" usemap="#logo">
+    <map name="logo">
+    <area shape="rect" coords="50,5,150,80" href="javascript:OnOverview()">
+    </map>
+    </div>
+    <div class="fw_bg_body">
+    <table>
+    <tbody><tr>
+    <td id="Menuhead">&nbsp;
+    </td>
+    <td id="Datahead">
+    <div id="contenthead" align="center">
+    <table style="width:730px;table-layout:fixed;margin-bottom:3px;">
+    <tbody><tr>
+    <td style="width:180px;">
+    <div class="rund-links blau"></div>
+    <div class="rund-rechts blau" style="width:160px;">
+    <a href="javascript:OnOverview()">
+    <p>Start Menu</p>
+    </a>
+    </div>
+    </td>
+    <td style="width: 180px;">
+    <div class="rund-links gelb"></div>
+    <div class="rund-rechts gelb" style="width:160px;">
+    <a href="javascript:OnSetting()">
+    <p>Settings</p>
+    </a>
+    </div>
+    </td>
+    <td style="width:auto;">&nbsp;</td>
+    
+    <td title="Log off of the user interface." style="width: 26px;"><a href="javascript:doLogout()">
+    <img src="../html/de/images/Logout.gif"></a>
+    </td>
+    
+    <td title="Overview" style="width: 26px;"><a href="javascript:OnOverview()">
+    <img src="../html/de/images/home.gif"></a>
+    </td>
+    <td title="Contents" style="width: 26px;"><a href="javascript:GoToSitemap();">
+    <img src="../html/de/images/sitemap_icon.gif"></a>
+    </td>
+    <script type="text/javascript">AddFavoritesLink(26,"Bookmarks");</script>
+    <td title="Print..." style="width: 26px;"><a href="javascript:window.print();">
+    <img src="../html/de/images/printer.gif"></a>
+    </td>
+    <td title="Help" style="width: 26px;"><a href="javascript:jslPopHelpEx('home', '')">
+    <img src="../html/de/images/help.gif"></a>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td id="Menuspalte">
+    <div id="menucontent">
+    
+    
+    <div class="backtitelstatus"><div class="rundrt"><div class="rundlt"><div class="ecklb"><div class="eckrb"><div class="foretitel">
+    &nbsp;
+    
+    </div></div></div></div></div></div>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="rundrb"><div class="rundlb"><div>
+    
+    
+    <ul class="LMenu">
+    <li class="LMenutop">&nbsp;</li>
+    
+    
+    <li class="LStatusMenuitemaktivTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','home')">Overview</a><span class="PTextOnly">Overview</span></li>
+    <!--CONFIG_isIsdnTE==1 || CONFIG_isPots==1 -->
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','foncalls')">Calls</a><span class="PTextOnly">Calls</span></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','fonbuch')">Telephone book</a><span class="PTextOnly">Telephone book</span></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','fondevices')">Telephony Devices</a><span class="PTextOnly">Telephony Devices</span></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','net')">Network</a><span class="PTextOnly">Network</span></li>
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','syslog')">Event Log</a><span class="PTextOnly">Event Log</span></li>
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','energy')">Energy Monitor</a><span class="PTextOnly">Energy Monitor</span></li>
+    <li class="LMenubottom">&nbsp;</li>
+    </ul>
+    
+    
+    
+    </div></div></div></div></div></div>
+    
+    </div>
+    </td>
+    <td id="Dataspalte">
+    <div align="center">
+    <div id="content">
+    <div class="backtitelstatus"><div class="rundrt"><div class="rundlt"><div class="ecklb"><div class="eckrb"><div class="foretitel">
+    Overview
+    </div></div></div></div></div></div>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="ecklb"><div class="eckrb"><div class="foredialog">
+    <p class="mb5 fett">Product Information</p>
+    <table class="tborder" id="tProdukt">
+    <tbody><tr>
+    <td style="padding-top: 2px; background-color: rgb(255, 255, 255);">Speedport W 503V</td>
+    <td style="padding-top: 2px; text-align: right; background-color: rgb(255, 255, 255);">
+    Firmware version&nbsp;98.04.82
+    </td>
+    </tr>
+    <script type="text/javascript">document.write(TrProduktInfo());</script>
+    <tr id="uiNotSigned" style="">
+    <td colspan="2" style="text-align: right; background-color: rgb(248, 248, 248);">
+    Changes not supported by manufacturer: <a href="javascript:jslPopHelp('hilfe_nichtsigniert')">additional information</a>
+    </td>
+    </tr>
+    <tr id="uiProviderDefaults" style="display:none;">
+    <td colspan="2" style="text-align:right;">
+    Your Speedport contains basic settings adjusted for your Internet Service Provider<a href="javascript:jslPopHelp('hilfe_ProviderDefaults')">: More Information</a>.
+    </td>
+    </tr>
+    </tbody></table>
+    <p class="mb5 mt10 fett">Interface Information</p>
+    <table class="tborder" id="tAnsch">
+    <tbody><tr id="uiShowDSL">
+    <td class="tdName" style="background-color: rgb(255, 255, 255);"><div id="dsl_title"><a href="javascript:jslGoTo('internet', 'overview');">DSL</a></div></td>
+    <td class="tdLed" style="background-color: rgb(255, 255, 255);"><div id="dsl_led"><img src="../html/de/images/led_gray.gif"></div></td>
+    <td style="background-color: rgb(255, 255, 255);"><div id="dsl_info"><font color="#cc0000">connection to DSL interrupted: <a href="javascript:jslGoTo('home', 'syslog');">more information</a></font></div></td>
+    </tr>
+    <tr>
+    <td class="tdName" style="background-color: rgb(248, 248, 248);"><div id="wlan_title"><a href="javascript:jslGoTo('wlan', 'wlan');">WLAN</a></div></td>
+    <td class="tdLed" style="background-color: rgb(248, 248, 248);"><div id="wlan_led"><img src="../html/de/images/led_green.gif"></div></td>
+    <td style="background-color: rgb(248, 248, 248);"><div id="wlan_info">enabled, secured, 1 WLAN station registered</div></td>
+    </tr>
+    <tr>
+    <td class="tdName" style="background-color: rgb(255, 255, 255);"><div id="lan_title"><a href="javascript:jslGoTo('system', 'net');">LAN</a></div></td>
+    <td class="tdLed" style="background-color: rgb(255, 255, 255);"><div id="lan_led"><img src="../html/de/images/led_gray.gif"></div></td>
+    <td style="background-color: rgb(255, 255, 255);"><div id="lan_info">not connected</div></td>
+    </tr>
+    </tbody></table>
+    <p class="mb5 mt10 fett">Connection Information</p>
+    <table id="tPpp" class="tborder" style="margin:auto; width: 100%">
+    <tbody><tr>
+    <td class="tdName" style="background-color: rgb(255, 255, 255);"><div id="ipv4_title"><a href="../cgi-bin/webcm?getpage=../html/de/menus/menu2.html&amp;sid=9d7ff91615c7863f&amp;var:menu=internet&amp;var:pagename=pppoe&amp;var:activtype=pppoe">Internet</a></div></td>
+    <td class="tdLed" style="background-color: rgb(255, 255, 255);"><div id="ipv4_led"><img src="../html/de/images/led_gray.gif"></div></td>
+    <td style="background-color: rgb(255, 255, 255);"><div id="ipv4_info">The Speedport has no account information for an Internet Service Provider.</div></td>
+    </tr>
+    <tr id="FonAll" style="">
+    <td class="tdName" style="background-color: rgb(248, 248, 248);"><script type="text/javascript">document.write(FonTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed" style="background-color: rgb(248, 248, 248);"><img src="../html/de/images/led_gray.gif"></td>
+    <td style="background-color: rgb(248, 248, 248);"><script type="text/javascript">document.write(FonDisplay());</script>Speedport has no registration information for an Internet telephony provider.</td>
+    </tr>
+    
+    <tr id="FonStatussip0" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip0"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip0">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip1" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip1"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip1">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip2" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip2"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip2">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip3" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip3"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip3">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip4" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip4"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip4">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip5" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip5"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip5">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip6" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip6"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip6">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip7" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip7"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip7">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip8" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip8"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip8">, no Internet connection</span></td>
+    </tr>
+    
+    <tr id="FonStatussip9" style="display:none">
+    <td class="tdName"><script type="text/javascript">document.write(SipTitle(true));</script><a href="javascript:jslGoTo('fon', 'siplist');">Internet telephony</a></td>
+    <td class="tdLed"><script type="text/javascript">document.write(SipLed("sip9"));</script><img src="../html/de/images/led_gray.gif"></td>
+    <td>Number <span id="Statussip9">, no Internet connection</span></td>
+    </tr>
+    
+    </tbody></table>
+    <!-- freecall 0; voice 0, email 0, fon 0 -->
+    
+    
+    
+    
+    <p class="mb5 mt10 fett" id="pKomfort" style="display: none">Convenience Features</p>
+    <table id="tKomfort" class="tborder" style="display: none">
+    <tbody><tr id="trKids" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('internet','userlist')">Child protection</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(KidsDisplay());</script>enabled</td>
+    </tr>
+    <tr id="trTam" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('home','fondevices')">Answering Machine</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(TamDisplay());</script>no answering machine enabled</td>
+    </tr>
+    <tr id="trSperre" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('home','sperre')">Block calls</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(RufsperreDisplay());</script>enabled</td>
+    </tr>
+    <tr id="trUmleitung" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('fon','rulall')">Call diversion</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(RufumleitungDisplay());</script>not active</td>
+    </tr>
+    <tr id="trCallthrough" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('fon','durchwahl')">Call Through</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td>active.</td>
+    </tr>
+    <tr id="trNacht" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('system','nacht')">Night Service</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(NachtDisplay());</script>disabled.</td>
+    </tr>
+    <tr id="trWecker1" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoToWecker(0)">Alarm&nbsp;1 </a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(WeckerDisplay(1));</script>is not active</td>
+    </tr>
+    <tr id="trWecker2" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoToWecker(1)">Alarm 2 </a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(WeckerDisplay(2));</script>is not active</td>
+    </tr>
+    <tr id="trEmail" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('system','email')">Push Service</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(EmailDisplay());</script>Speedport sends daily information by e-mail</td>
+    </tr>
+    
+    <tr id="trPortfw" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('internet','portfw')">Port forwarding</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(PortfwDisplay());</script></td>
+    </tr>
+    
+    <tr id="trRemoteHttps" style="display:none">
+    <td class="tdName"><a href="javascript:jslGoTo('internet','remote_https')">Remote access</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(RemoteHttpsDisplay());</script>enabled,  UserName: </td>
+    </tr>
+    <tr id="trDynDns" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('internet','dyndns')">Dynamic DNS</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(DynDnsDisplay());</script>enabled, no domain name given, Status: unknown</td>
+    </tr>
+    <tr id="trInfo" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('system','infoled')">"INFO" display</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(InfoLedDisplay());</script>shows rate-related information.</td>
+    </tr>
+    <tr id="trOnlineCnt" style="display: none">
+    <td class="tdName"><a href="javascript:jslGoTo('internet','inetstat')">Online Meter</a></td>
+    <td class="tdLed">&nbsp;</td>
+    <td><script type="text/javascript">document.write(OnlineCntDisplay());</script>0 minutes of 0 hours</td>
+    </tr>
+    </tbody></table>
+    </div></div></div></div></div></div>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="rundrb"><div class="rundlb"><div class="forebuttons">
+    <input type="button" onclick="uiDoRefresh()" value="Refresh" class="Pushbutton">
+    <input type="button" onclick="uiDoHelp()" value="Help" class="Pushbutton" id="buttonHilfe">
+    </div></div></div></div></div></div>
+    
+    </div>
+    
+    </div>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div class="fw_footer">&nbsp;</div>
+    </td></tr>
+    </tbody></table>
+    <!-- Post Form -->
+    <form method="POST" action="../cgi-bin/webcm" target="_self" id="uiPostForm" name="uiPostForm">
+    <!-- Refresh Form -->
+    <input type="hidden" name="sid" value="9d7ff91615c7863f" id="uiPostSid">
+    <input type="hidden" name="getpage" value="../html/de/menus/menu2.html" id="uiPostGetPage">
+    <input type="hidden" name="errorpage" value="../html/de/menus/menu2.html" id="uiPostErrPage">
+    <input type="hidden" name="var:pagename" value="home" id="uiPostPageName">
+    <input type="hidden" name="var:errorpagename" value="" id="uiPostErrorPageName">
+    <input type="hidden" name="var:menu" value="home" id="uiPostMenu">
+    <input type="hidden" name="var:pagemaster" value="" id="uiPostPageMaster">
+    <input type="hidden" name="time:settings/time" value="" id="uiPostDateTime">
+    <input type="hidden" name="box:settings/webui_cookie" value="" disabled="">
+    <!-- END Refresh Form -->
+    
+    <input type="hidden" name="var:activtype" value="pppoe" id="uiPostActivType">
+    <input type="hidden" name="var:tabInetstat" value="0" id="uiPostTab">
+    
+    <input type="hidden" name="sip:settings/sip0/activated" value="0" id="uiPostActivsip0" disabled="">
+    <input type="hidden" name="sip:settings/sip0/displayname" value="" id="uiPostDisplaysip0" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip1/activated" value="0" id="uiPostActivsip1" disabled="">
+    <input type="hidden" name="sip:settings/sip1/displayname" value="" id="uiPostDisplaysip1" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip2/activated" value="0" id="uiPostActivsip2" disabled="">
+    <input type="hidden" name="sip:settings/sip2/displayname" value="" id="uiPostDisplaysip2" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip3/activated" value="0" id="uiPostActivsip3" disabled="">
+    <input type="hidden" name="sip:settings/sip3/displayname" value="" id="uiPostDisplaysip3" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip4/activated" value="0" id="uiPostActivsip4" disabled="">
+    <input type="hidden" name="sip:settings/sip4/displayname" value="" id="uiPostDisplaysip4" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip5/activated" value="0" id="uiPostActivsip5" disabled="">
+    <input type="hidden" name="sip:settings/sip5/displayname" value="" id="uiPostDisplaysip5" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip6/activated" value="0" id="uiPostActivsip6" disabled="">
+    <input type="hidden" name="sip:settings/sip6/displayname" value="" id="uiPostDisplaysip6" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip7/activated" value="0" id="uiPostActivsip7" disabled="">
+    <input type="hidden" name="sip:settings/sip7/displayname" value="" id="uiPostDisplaysip7" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip8/activated" value="0" id="uiPostActivsip8" disabled="">
+    <input type="hidden" name="sip:settings/sip8/displayname" value="" id="uiPostDisplaysip8" disabled="">
+    
+    <input type="hidden" name="sip:settings/sip9/activated" value="0" id="uiPostActivsip9" disabled="">
+    <input type="hidden" name="sip:settings/sip9/displayname" value="" id="uiPostDisplaysip9" disabled="">
+    
+    
+    <input type="hidden" name="sip:status/sip0/connect" value="0" id="uiPostConnectsip0" disabled="">
+    
+    <input type="hidden" name="sip:status/sip1/connect" value="0" id="uiPostConnectsip1" disabled="">
+    
+    <input type="hidden" name="sip:status/sip2/connect" value="0" id="uiPostConnectsip2" disabled="">
+    
+    <input type="hidden" name="sip:status/sip3/connect" value="0" id="uiPostConnectsip3" disabled="">
+    
+    <input type="hidden" name="sip:status/sip4/connect" value="0" id="uiPostConnectsip4" disabled="">
+    
+    <input type="hidden" name="sip:status/sip5/connect" value="0" id="uiPostConnectsip5" disabled="">
+    
+    <input type="hidden" name="sip:status/sip6/connect" value="0" id="uiPostConnectsip6" disabled="">
+    
+    <input type="hidden" name="sip:status/sip7/connect" value="0" id="uiPostConnectsip7" disabled="">
+    
+    <input type="hidden" name="sip:status/sip8/connect" value="0" id="uiPostConnectsip8" disabled="">
+    
+    <input type="hidden" name="sip:status/sip9/connect" value="0" id="uiPostConnectsip9" disabled="">
+    
+    <input type="hidden" name="connection0:pppoe:status/voipconnect " value="3" id="uiPostVoipConnect" disabled="">
+    <input type="hidden" name="var:weckernr" value="" id="uiPostWeckernr">
+    <input type="hidden" name="updatecheck:settings/start" value="" id="uiPostUpdateStart" disabled="">
+    <input type="hidden" name="logger:settings/filter" value="0" id="uiPostFilter">
+    <input type="hidden" name="webdavclient:settings/sum_failed_uploads" value="no-emu" id="uiPostResetFailedUploadCnt" disabled="">
+    
+    </form>
+    <!-- END Post Form -->
+    
+    <form name="logoutForm" action="../cgi-bin/webcm" method="POST">
+    <input type="hidden" name="sid" value="9d7ff91615c7863f">
+    <input type="hidden" name="security:command/logout" value="">
+    <input type="hidden" name="getpage" value="../html/confirm_logout.html">
+    </form>
+    
+    
+    </body>

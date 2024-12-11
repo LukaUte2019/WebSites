@@ -1,0 +1,52 @@
+http://192.168.178.1/cgi-bin/webcm?getpage=../html/de/home/home_coninf.txt&sid=67d04c46f90fa2b8
+{
+    "connection": "pppoe",
+    "connection_status": "0",
+    "encapsulation": "dslencap_pppoe",
+    "expert_mode": "0",
+    "connection_ip": "-",
+    "umts_enabled": "no-emu",
+    "gsm_established": "no-emu",
+    "connection_detail": "-",
+    "connection_uptime": "-",
+    "ipv6_state": "no-emu",
+    "ipv6_prefix": "no-emu",
+    "isusbgsm": ""
+}
+
+http://192.168.178.1/cgi-bin/webcm?getpage=../html/de/home/home_lan.txt&sid=67d04c46f90fa2b8
+{
+    "eth0": "0",
+    "eth1": "0",
+    "eth2": "0",
+    "eth3": "0"
+}
+
+http://192.168.178.1/cgi-bin/webcm?getpage=../html/de/home/home_dsl.txt&sid=67d04c46f90fa2b8
+{
+    "dsl_carrier_state": "0",
+    "umts_enabled": "no-emu",
+    "ata_mode": "0",
+    "isusbgsm": "",
+    "dsl_ds_nrate": "0",
+    "dsl_us_nrate": "0",
+    "hint_dsl_no_cable": "1",
+    "wds_enabled": "0",
+    "wds_hop": "0",
+    "isata": ""
+}
+
+http://192.168.178.1/cgi-bin/webcm?getpage=../html/de/home/home_wlan.txt&sid=67d04c46f90fa2b8
+{
+    "ap_enabled": "1",
+    "active_stations": "1",
+    "encryption": "4",
+    "wireless_stickandsurf_enabled": "1",
+    "is_macfilter_active": "0",
+    "wmm_enabled": "1",
+    "wlan_state": [
+        "5",
+        "end"
+    ]
+}
+

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WiFi networks</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p>Wi-Fi networks</p>
+    <div class="backdialog">
+        <script type="text/javascript">document.write(FunknetzDetails());</script>
+        <p>&nbsp;</p>
+        <table id="uiWLANInfo1" style="margin: auto;" border="0" class="tborder">
+            <tbody>
+                <tr>
+                    <td class="tdKopf">
+                        <table border="0">
+                            <tbody>
+                                <tr>
+                                    <th class="thrssi" style="text-align: center;" title="Reception Field Strength (RSSI)">
+                                        <img src="images/antenne.gif" width="11px" height="13px">
+                                    </th>
+                                    <th class="thssid">
+                                        <div style="padding:0px 0px 0px 5px;">
+                                            Name
+                                            (SSID)
+                                        </div>
+                                    </th>
+                                    <th class="thKanal">
+                                        <div style="padding:0px 0px 0px 5px;">
+                                            Channel
+                                        </div>
+                                    </th>
+                                    <th class="thMAC">
+                                        <div style="padding:0px 0px 0px 5px;">
+                                            MAC
+                                            address
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdscrollFeld">
+                        <div style="width:100%; height:100%; overflow: auto;">
+                            <table id="tSSIDScroll1" border="0">
+                                <colgroup>
+                                    <col width="50px">
+                                    <col width="283px">
+                                    <col width="50px">
+                                    <col width="160">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="80%">
+                                            <img src="images/rssi5.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="I&amp;S&amp;Lj&amp;L" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                I&amp;S&amp;Lj&amp;L
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                5
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                74:9D:79:66:C4:F6
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="40%">
+                                            <img src="images/rssi2.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Spasevix" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Spasevix
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                11
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                7C:13:1D:FF:04:F6
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="40%">
+                                            <img src="images/rssi2.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Telekom-978856" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Telekom-978856
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                5
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                10:50:72:27:BC:E6
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                11
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                B6:B0:24:A1:E9:0A
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Wajnushka" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Wajnushka
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                11
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                B4:B0:24:91:E9:0A
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="ZTE_D2D723" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                ZTE_D2D723
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                13
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                FC:2D:5E:D2:D7:23
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="JT3300V_1521B4" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                JT3300V_1521B4
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                13
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                6C:AD:EF:B4:21:B4
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Vankoski" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Vankoski
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                3
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                50:91:E3:D8:6C:A8
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Tenda_2C8E08" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Tenda_2C8E08
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                6
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                C8:3A:35:2C:8E:08
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="A1_17601D" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                A1_17601D
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                6
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                B0:0A:D5:17:60:1D
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="TP-Link_75D8" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                TP-Link_75D8
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                3
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                5C:E9:31:83:75:D8
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="HUAWEI-2.4G-D67f" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                HUAWEI-2.4G-D67f
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                7
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                24:91:BB:8D:90:7C
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="20%">
+                                            <img src="images/rssi1.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="HUAWEI-8fGv" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                HUAWEI-8fGv
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                C8:8D:83:44:D5:B0
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="linksys" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                linksys
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                11
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                00:1C:10:24:84:66
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="WLAN_D5076C" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                WLAN_D5076C
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                1
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                90:1D:27:D5:07:6C
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="HUAWEI_b9UC" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                HUAWEI_b9UC
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                78:D7:52:F3:29:B8
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="delmako" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                delmako
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                11
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                70:A5:6A:B0:1C:98
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="It Hurts When IP" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                It
+                                                Hurts
+                                                When
+                                                IP
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                1
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                9C:6F:52:3C:D9:7F
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="c6a381b7" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                c6a381b7
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                1
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                50:2C:C6:A3:81:B7
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Ranko" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Ranko
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                1
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                58:23:8C:00:AB:50
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Thom_D0042928" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Thom_D0042928
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                1
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                28:BE:9B:05:91:72
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(255, 255, 255);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Ampov" style="background-color: rgb(255, 255, 255);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Ampov
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                3
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(255, 255, 255);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                58:76:AC:A5:C1:66
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center; background-color: rgb(238, 238, 238);" title="<20%">
+                                            <img src="images/rssi0.gif" width="26px" height="13px">
+                                        </td>
+                                        <td title="Radiodifuzija" style="background-color: rgb(238, 238, 238);">
+                                            <div style="width:283px; padding:0px 0px 0px 5px; overflow: hidden; white-space:nowrap; ">
+                                                Radiodifuzija
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                5
+                                            </div>
+                                        </td>
+                                        <td style="background-color: rgb(238, 238, 238);">
+                                            <div style="padding:0px 0px 0px 5px;">
+                                                10:27:F5:B3:25:2E
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

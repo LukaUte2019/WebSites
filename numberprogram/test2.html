@@ -1,0 +1,209 @@
+<body onload="uiDoOnLoad()">
+    <div id="uiTooltip" style="position:absolute;display:none;background-color:lightyellow;padding:5px;border:1px;border-color:black;border-style:solid;"></div>
+    <table style="margin: auto;">
+    <tbody><tr><td>
+    <div class="fw_header">
+    <img src="../html/de/images/leer.gif" width="980px" height="90px" usemap="#logo">
+    <map name="logo">
+    <area shape="rect" coords="50,5,150,80" href="javascript:OnOverview()">
+    </map>
+    </div>
+    <div class="fw_bg_body">
+    <table>
+    <tbody><tr>
+    <td id="Menuhead">&nbsp;
+    </td>
+    <td id="Datahead">
+    <div id="contenthead" align="center">
+    <table style="width:730px;table-layout:fixed;margin-bottom:3px;">
+    <tbody><tr>
+    <td style="width:180px;">
+    <div class="rund-links blau"></div>
+    <div class="rund-rechts blau" style="width:160px;">
+    <a href="javascript:OnOverview()">
+    <p>Start Menu</p>
+    </a>
+    </div>
+    </td>
+    <td style="width: 180px;">
+    <div class="rund-links gelb"></div>
+    <div class="rund-rechts gelb" style="width:160px;">
+    <a href="javascript:OnSetting()">
+    <p>Settings</p>
+    </a>
+    </div>
+    </td>
+    <td style="width:auto;">&nbsp;</td>
+    
+    <td title="Log off of the user interface." style="width: 26px;"><a href="javascript:doLogout()">
+    <img src="../html/de/images/Logout.gif"></a>
+    </td>
+    
+    <td title="Overview" style="width: 26px;"><a href="javascript:OnOverview()">
+    <img src="../html/de/images/home.gif"></a>
+    </td>
+    <td title="Contents" style="width: 26px;"><a href="javascript:GoToSitemap();">
+    <img src="../html/de/images/sitemap_icon.gif"></a>
+    </td>
+    <script type="text/javascript">AddFavoritesLink(26,"Bookmarks");</script>
+    <td title="Print..." style="width: 26px;"><a href="javascript:window.print();">
+    <img src="../html/de/images/printer.gif"></a>
+    </td>
+    <td title="Help" style="width: 26px;"><a href="javascript:jslPopHelpEx('home', '')">
+    <img src="../html/de/images/help.gif"></a>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td id="Menuspalte">
+    <div id="menucontent">
+    
+    </div>
+    </td>
+    <td id="Dataspalte">
+    <div align="center">
+    <div id="content">
+    <div class="backtitelkonfig"><div class="rundrt"><div class="rundlt"><div class="ecklb"><div class="eckrb"><div class="foretitel">
+    Welcome
+    </div></div></div></div></div></div>
+    <div id="idGeneral" class="backdialog"><div class="ecklm"><div class="eckrm"><div class="ecklb"><div class="eckrb"><div class="foredialog">
+    <p>This Wizard assists you in configuring your Speedport.<br><br>
+    All of the necessary basic settings are performed in just a few steps. You can abort the Wizard at any time and start it again at a later point in time.
+    </p>
+    </div></div></div></div></div></div>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="rundrb"><div class="rundlb"><div class="forebuttons">
+    
+    
+    
+    
+    
+    
+    
+    <input type="button" onclick="uiDoOk()" value="Next >" class="Pushbuttonfett">&nbsp;&nbsp;
+    <input type="button" onclick="uiDoCancel()" value="Cancel" class="Pushbutton">
+    </div></div></div></div></div></div>
+    </div>
+    
+    </div>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div class="fw_footer">&nbsp;</div>
+    </td></tr>
+    </tbody></table>
+    <!-- Post Form -->
+    <form method="POST" action="../cgi-bin/webcm" target="_self" id="uiPostForm" name="uiPostForm">
+    <!-- Refresh Form -->
+    <input type="hidden" name="sid" value="9d7ff91615c7863f" id="uiPostSid">
+    <input type="hidden" name="getpage" value="../html/de/menus/menu2.html" id="uiPostGetPage">
+    <input type="hidden" name="errorpage" value="../html/de/menus/menu2.html" id="uiPostErrPage">
+    <input type="hidden" name="var:pagename" value="first_Start_ISP" id="uiPostPageName">
+    <input type="hidden" name="var:errorpagename" value="first_Start_ISP" id="uiPostErrorPageName">
+    <input type="hidden" name="var:menu" value="first" id="uiPostMenu">
+    <input type="hidden" name="var:pagemaster" value="" id="uiPostPageMaster">
+    <input type="hidden" name="time:settings/time" value="" id="uiPostDateTime">
+    <input type="hidden" name="box:settings/webui_cookie" value="" disabled="">
+    <!-- END Refresh Form -->
+    
+    
+    <input type="hidden" name="var:HTMLConfigAssiTyp" value="First" id="uiHTMLConfigAssiTyp">
+    <input type="hidden" name="var:FonNumbersToFonAssiNextPage" value="" id="uiFonNumbersToFonAssiNextPage">
+    <input type="hidden" name="var:FonAssiFromPage" value="" id="uiFonAssiFromPage">
+    
+    <input type="hidden" name="var:ProviderStep" value="" id="uiProviderStep">
+    <input type="hidden" name="var:UseSip" value="" id="uiUseSip">
+    <input type="hidden" name="var:UseRouter" value="" id="uiUseRouter">
+    <input type="hidden" name="var:UseFlat" value="" id="uiUseFlatrate">
+    <input type="hidden" name="var:PppProvider" value="" id="uiPppProvider">
+    <input type="hidden" name="var:PppUser" value="" id="uiPppUsername">
+    <input type="hidden" name="var:PppPassword" value="" id="uiPppPassword">
+    <input type="hidden" name="var:PppPin" value="" id="uiPppPin">
+    <input type="hidden" name="var:PppTimeout" value="0" id="uiPppIdleTimeout">
+    <input type="hidden" name="var:PppTelenode" value="0" id="uiPppTelenode">
+    <input type="hidden" name="var:VoipUser" value="" id="uiVoipUsername">
+    <input type="hidden" name="var:VoipPassword" value="" id="uiVoipPassword">
+    <input type="hidden" name="var:Encapsulation" value="dslencap_pppoe" id="uiEncaps">
+    <input type="hidden" name="var:AtaMode" value="0" id="uiAtaMode">
+    <input type="hidden" name="var:WanIpMode" value="" id="uiWanIpMode">
+    
+    <input type="hidden" name="var:UseDhcp" value="1" id="uiUseDhcp">
+    <input type="hidden" name="var:Ipaddr" value="0.0.0.0" id="uiIpaddr">
+    <input type="hidden" name="var:Netmask" value="0.0.0.0" id="uiNetmask">
+    <input type="hidden" name="var:Gateway" value="0.0.0.0" id="uiGateway">
+    <input type="hidden" name="var:Dns0" value="0.0.0.0" id="uiDns0">
+    <input type="hidden" name="var:Dns1" value="0.0.0.0" id="uiDns1">
+    
+    <input type="hidden" name="var:ConnectMode" value="" id="uiConnectMode">
+    <input type="hidden" name="var:PppVCI" value="" id="uiPppVCI">
+    <input type="hidden" name="var:PppVPI" value="" id="uiPppVPI">
+    <input type="hidden" name="var:PppEncapsAutodect" value="" id="uiPppEncapsAutodect">
+    
+    <input type="hidden" name="var:SipProvider" value="" id="uiSipProvider">
+    <input type="hidden" name="var:SipUser" value="" id="uiSipUsername">
+    <input type="hidden" name="var:SipPassword" value="" id="uiSipPassword">
+    <input type="hidden" name="var:SipRegistrar" value="" id="uiSipRegistrar">
+    <input type="hidden" name="var:SipStun" value="" id="uiSipStun">
+    <input type="hidden" name="var:SipProxy" value="" id="uiSipProxy">
+    <input type="hidden" name="var:SipRufnr" value="" id="uiSipRufnr">
+    
+    <input type="hidden" name="var:SipRegType" value="" id="uiSipRegType">
+    <input type="hidden" name="var:SipUseOKZ" value="0" id="uiSipUseOKZ">
+    <input type="hidden" name="var:SipMsn" value="" id="uiSipMsn">
+    <input type="hidden" name="var:SipPassThrough" value="" id="uiSipPassThrough">
+    <input type="hidden" name="var:SipShowOKZ" value="0" id="uiSipShowOKZ">
+    <input type="hidden" name="var:SipOKZ" value="" id="uiSipOKZ">
+    <input type="hidden" name="var:SipUseLKZ" value="" id="uiSipUseLKZ">
+    <input type="hidden" name="var:SipKeepOKZPrefix" value="" id="uiSipKeepOKZPrefix">
+    <input type="hidden" name="var:SipKeepLKZPrefix" value="" id="uiSipKeepLKZPrefix">
+    <input type="hidden" name="var:SipPstn" value="" id="uiSipPstn">
+    <input type="hidden" name="var:UseODA" value="" id="uiUseODA">
+    <input type="hidden" name="var:AcceptAGB" value="" id="uiAcceptAGB">
+    <input type="hidden" name="var:TcomTargetarch" value="0" id="uiTcomTargetarch">
+    <input type="hidden" name="var:isFirsttimeStartISP" value="0" id="uiPostFirsttimeStartISP">
+    
+    <input type="hidden" name="connection0:settings/type" value="pppoe" id="uiPostType" disabled="">
+    <input type="hidden" name="connection0:pppoe:settings/username" value="" id="uiPostPppUsername" disabled="">
+    <input type="hidden" name="connection0:pppoe:settings/password" value="" id="uiPostPppPassword" disabled="">
+    <input type="hidden" name="connection0:pppoe:settings/idle" value="0" id="uiPostPppIdleTimeout" disabled="">
+    <input type="hidden" name="connection0:pppoe:settings/mode" value="lcp" id="uiPostPppMode">
+    <input type="hidden" name="connection_voip:settings/username" value="" id="uiPostVoipUsername" disabled="">
+    <input type="hidden" name="connection_voip:settings/password" value="" id="uiPostVoipPassword" disabled="">
+    <input type="hidden" name="sar:settings/encapsulation" value="dslencap_pppoe" id="uiPostEncaps" disabled="">
+    <input type="hidden" name="box:settings/ata_mode" value="0" id="uiPostAta" disabled="">
+    <input type="hidden" name="sar:settings/dslencap_ether/use_dhcp" value="1" id="uiPostSarDhcp" disabled="">
+    <input type="hidden" name="sar:settings/dslencap_ether/ipaddr" value="0.0.0.0" id="uiPostSarAddr" disabled="">
+    <input type="hidden" name="sar:settings/dslencap_ether/netmask" value="0.0.0.0" id="uiPostSarMask" disabled="">
+    <input type="hidden" name="sar:settings/dslencap_ether/gateway" value="0.0.0.0" id="uiPostSarGate" disabled="">
+    <input type="hidden" name="sar:settings/dslencap_ether/dns1" value="0.0.0.0" id="uiPostSarDns0" disabled="">
+    <input type="hidden" name="sar:settings/dslencap_ether/dns2" value="0.0.0.0" id="uiPostSarDns1" disabled="">
+    
+    
+    <input type="hidden" name="sar:settings/VPI" value="1" id="uiPostVPI" disabled="">
+    <input type="hidden" name="sar:settings/VCI" value="32" id="uiPostVCI" disabled="">
+    <input type="hidden" name="sar:settings/autodetect" value="0" id="uiPostAutodetect" disabled="">
+    <!--
+    <input type="hidden" name="sar:settings/encapsulation" value="dslencap_pppoe" id="uiPostEncaps">
+    <input type="hidden" name="sar:settings/dslencap_ether/use_dhcp" value="1" id="uiPostEncapsUseDhcp">
+    <input type="hidden" name="sar:settings/dslencap_ether/ipaddr" value="0.0.0.0" id="uiPostIpaddr">
+    <input type="hidden" name="sar:settings/dslencap_ether/netmask" value="0.0.0.0" id="uiPostNetmask">
+    <input type="hidden" name="sar:settings/dslencap_ether/gateway" value="0.0.0.0" id="uiPostGateway">
+    <input type="hidden" name="sar:settings/dslencap_ether/dns1" value="0.0.0.0" id="uiPostDNS1">
+    <input type="hidden" name="sar:settings/dslencap_ether/dns2" value="0.0.0.0" id="uiPostDNS2">
+    -->
+    
+    
+    </form>
+    <!-- END Post Form -->
+    
+    <form name="logoutForm" action="../cgi-bin/webcm" method="POST">
+    <input type="hidden" name="sid" value="9d7ff91615c7863f">
+    <input type="hidden" name="security:command/logout" value="">
+    <input type="hidden" name="getpage" value="../html/confirm_logout.html">
+    </form>
+    
+    
+    </body>

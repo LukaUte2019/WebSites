@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+<body onload="uiDoOnLoad()">
+    <div id="uiTooltip" style="position:absolute;display:none;background-color:lightyellow;padding:5px;border:1px;border-color:black;border-style:solid;"></div>
+    <table style="margin: auto;">
+    <tbody><tr><td>
+    <div class="fw_header">
+    <img src="../html/de/images/leer.gif" width="980px" height="90px" usemap="#logo">
+    <map name="logo">
+    <area shape="rect" coords="50,5,150,80" href="javascript:OnOverview()">
+    </map>
+    </div>
+    <div class="fw_bg_body">
+    <table>
+    <tbody><tr>
+    <td id="Menuhead">&nbsp;
+    </td>
+    <td id="Datahead">
+    <div id="contenthead" align="center">
+    <table style="width:730px;table-layout:fixed;margin-bottom:3px;">
+    <tbody><tr>
+    <td style="width:180px;">
+    <div class="rund-links blau"></div>
+    <div class="rund-rechts blau" style="width:160px;">
+    <a href="javascript:OnOverview()">
+    <p>Start Menu</p>
+    </a>
+    </div>
+    </td>
+    <td style="width: 180px;">
+    <div class="rund-links gelb"></div>
+    <div class="rund-rechts gelb" style="width:160px;">
+    <a href="javascript:OnSetting()">
+    <p>Settings</p>
+    </a>
+    </div>
+    </td>
+    <td style="width:auto;">&nbsp;</td>
+    
+    <td title="Log off of the user interface." style="width: 26px;"><a href="javascript:doLogout()">
+    <img src="../html/de/images/Logout.gif"></a>
+    </td>
+    
+    <td title="Overview" style="width: 26px;"><a href="javascript:OnOverview()">
+    <img src="../html/de/images/home.gif"></a>
+    </td>
+    <td title="Contents" style="width: 26px;"><a href="javascript:GoToSitemap();">
+    <img src="../html/de/images/sitemap_icon.gif"></a>
+    </td>
+    <script type="text/javascript">AddFavoritesLink(26,"Bookmarks");</script>
+    <td title="Print..." style="width: 26px;"><a href="javascript:window.print();">
+    <img src="../html/de/images/printer.gif"></a>
+    </td>
+    <td title="Help" style="width: 26px;"><a href="javascript:jslPopHelpEx('home', '')">
+    <img src="../html/de/images/help.gif"></a>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td id="Menuspalte">
+    <div id="menucontent">
+    
+    
+    <div class="backtitelstatus"><div class="rundrt"><div class="rundlt"><div class="ecklb"><div class="eckrb"><div class="foretitel">
+    &nbsp;
+    
+    </div></div></div></div></div></div>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="rundrb"><div class="rundlb"><div>
+    
+    
+    <ul class="LMenu">
+    <li class="LMenutop">&nbsp;</li>
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','home')">Overview</a><span class="PTextOnly">Overview</span></li>
+    <!--CONFIG_isIsdnTE==1 || CONFIG_isPots==1 -->
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','foncalls')">Calls</a><span class="PTextOnly">Calls</span></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="LStatusMenuitemaktivTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','fonbuch')">Telephone book</a><span class="PTextOnly">Telephone book</span></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','fondevices')">Telephony Devices</a><span class="PTextOnly">Telephony Devices</span></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','net')">Network</a><span class="PTextOnly">Network</span></li>
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','syslog')">Event Log</a><span class="PTextOnly">Event Log</span></li>
+    
+    
+    
+    <li class="LMenuitemTop"><img class="LMenuPfeil" src="../html/de/images/leer.gif"><a href="javascript:jslGoTo('home','energy')">Energy Monitor</a><span class="PTextOnly">Energy Monitor</span></li>
+    <li class="LMenubottom">&nbsp;</li>
+    </ul>
+    
+    
+    
+    </div></div></div></div></div></div>
+    
+    </div>
+    </td>
+    <td id="Dataspalte">
+    <div align="center">
+    <div id="content">
+    
+    <div class="backtitelstatus"><div class="rundrt"><div class="rundlt"><div class="ecklb"><div class="eckrb"><div class="foretitel">
+    
+    Telephone book
+    </div></div></div></div></div></div>
+    <div class="backframe"><div class="ecklm"><div class="eckrm"><div class="rundrb"><div class="rundlb"><div class="foredialog"><div class="ie_b10">
+    <ul class="tabs">
+    <li class="tabs_on"><div class="activtab">Telephone book</div></li>
+    <li><a href="javascript:jslGoTo('','fonintern')">Internal Numbers</a></li>
+    <li><a href="javascript:jslGoTo('','dialbuch')">Click to Dial</a></li>
+    </ul>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="ecklb"><div class="eckrb"><div class="foredialog">
+    <table id="tList" class="tborder" style="margin:auto; width: 100%;">
+    <colgroup>
+    <col class="c5">
+    <col class="c3">
+    <col class="c7">
+    <col class="c1">
+    <col class="c2">
+    <col class="c6">
+    <col class="c4">
+    <col class="c4">
+    </colgroup>
+    <tbody><tr>
+    <th class="c5" style="background-color: rgb(238, 238, 238);">Name</th>
+    <th colspan="2" style="background-color: rgb(238, 238, 238);">Number</th>
+    
+    <th id="uiViewThKW" class="c1" style="background-color: rgb(238, 238, 238);">Quick-dial No.</th>
+    <th id="uiViewThVanity" class="c2" style="background-color: rgb(238, 238, 238);">Vanity Code</th>
+    <th id="uiViewThVIP" class="c6" style="background-color: rgb(238, 238, 238);">Important</th>
+    
+    <th class="c4" style="background-color: rgb(238, 238, 238);"></th>
+    <th class="c4" style="background-color: rgb(238, 238, 238);"></th>
+    </tr>
+    
+    
+    <tr class="Dialoglist"><td colspan="8" class="ac fs10" style="background-color: rgb(255, 255, 255);">The Telephone Book is empty.</td></tr>
+    
+    </tbody></table>
+    <script type="text/javascript">jslZebrastreifen("tList");</script>
+    <form method="POST" action="../cgi-bin/firmwarecfg" enctype="multipart/form-data" id="uiPostExportForm" name="uiPostExportForm" onsubmit="return false">
+    <input type="hidden" name="sid" value="7adce7ac18f9c42e">
+    <input type="hidden" name="PhonebookId" value="0">
+    <input type="hidden" name="PhonebookExportName" value="Telephone Book">
+    <input type="hidden" name="PhonebookExport" value="">
+    </form>
+    <table class="mt10" style="width:100%;">
+    <tbody><tr>
+    <td style="width:130px;" class="imexportC">
+    <input type="button" value="Save" onclick="uiDoExport()" id="uiExport" class="Pushbutton" style="width:120px" disabled="">
+    </td>
+    <td style="width:130px;" class="imexportC">
+    <input type="button" id="uiImportButton" onclick="uiShowImport()" value="Restore" class="PushbuttonBig">
+    </td>
+    <td style="width:100%;" class="imexportC">
+    <input type="button" onclick="uiDoShowPrintView()" value="Print Preview" class="PushbuttonBig">
+    </td>
+    <td style="width:200px;" class="imexportC">
+    <input type="button" id="uiViewNewButton" onclick="uiDoNew1('Entry0')" value="New Entry" class="PushbuttonBig" style="width:180px">
+    </td>
+    </tr>
+    </tbody></table>
+    <div id="uiViewImport" style="display:none" class="mb10 mt10">
+    <form method="POST" action="../cgi-bin/firmwarecfg" enctype="multipart/form-data" id="uiPostImportForm" name="uiPostImportForm" onsubmit="return false">
+    <input type="hidden" name="sid" value="7adce7ac18f9c42e">
+    <input type="hidden" name="PhonebookId" value="0">
+    <p class="mb10"><b>Restore Telephone Book </b></p>
+    <p class="mb10">Please select the telephone book file from which the entries are to be restored. All existing entries in the telephone book will be deleted during this process. </p>
+    <p class="left20 mb10"><input type="file" size="40" value="" name="PhonebookImportFile" id="PhonebookImportFile"> </p>
+    <p class="ar"><input type="button" value="Restore Telephone Book" onclick="uiDoImport()" id="uiImport" class="Pushbutton" style="width:240px"></p>
+    </form>
+    </div>
+    
+    
+    </div></div></div></div></div></div>
+    <div class="backdialog"><div class="ecklm"><div class="eckrm"><div class="rundrb"><div class="rundlb"><div class="forebuttons">
+    <input type="button" onclick="uiDoHelp()" value="Help" class="Pushbutton">
+    </div></div></div></div></div></div>
+    </div></div></div></div></div></div></div>
+    </div>
+    
+    </div>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div class="fw_footer">&nbsp;</div>
+    </td></tr>
+    </tbody></table>
+    <!-- Post Form -->
+    <form method="POST" action="../cgi-bin/webcm" target="_self" id="uiPostForm" name="uiPostForm">
+    <!-- Refresh Form -->
+    <input type="hidden" name="sid" value="7adce7ac18f9c42e" id="uiPostSid">
+    <input type="hidden" name="getpage" value="../html/de/menus/menu2.html" id="uiPostGetPage">
+    <input type="hidden" name="errorpage" value="../html/de/menus/menu2.html" id="uiPostErrPage">
+    <input type="hidden" name="var:pagename" value="fonbuch" id="uiPostPageName">
+    <input type="hidden" name="var:errorpagename" value="fonbuch" id="uiPostErrorPageName">
+    <input type="hidden" name="var:menu" value="home" id="uiPostMenu">
+    <input type="hidden" name="var:pagemaster" value="" id="uiPostPageMaster">
+    <input type="hidden" name="time:settings/time" value="" id="uiPostDateTime">
+    <input type="hidden" name="box:settings/webui_cookie" value="" disabled="">
+    <!-- END Refresh Form -->
+    
+    <input type="hidden" name="var:showDialing" value="" id="uiPostShowDialing">
+    <input type="hidden" name="telcfg:settings/UseClickToDial" value="0" id="uiPostClickToDial" disabled="">
+    <input type="hidden" name="telcfg:settings/DialPort" value="1" id="uiPostDialPort" disabled="">
+    <input type="hidden" name="telcfg:command/Dial" value="" id="uiPostDial" disabled="">
+    <input type="hidden" name="telcfg:command/Hangup" value="" id="uiPostHangup" disabled="">
+    
+    <input type="hidden" name="telcfg:settings/MSN/Port0/Name" value="" id="uiPostFon0" disabled="">
+    
+    <input type="hidden" name="telcfg:settings/MSN/Port1/Name" value="" id="uiPostFon1" disabled="">
+    
+    <input type="hidden" name="telcfg:settings/MSN/Port2/Name" value="Fon 3" id="uiPostFon2" disabled="">
+    
+    <input type="hidden" name="var:vonFoncalls" value="0" id="uiPostVonFoncalls">
+    <input type="hidden" name="var:PhonebookEntryNew" value="" id="uiPostEntryNew">
+    <input type="hidden" name="var:PhonebookEntryXCount" value="" id="uiPostEntryXCount">
+    <input type="hidden" name="var:PhonebookEntryNewCode" value="" id="uiPostEntryNewCode">
+    
+    <input type="hidden" name="var:WaehlhilfeVon" value="" id="uiWaehlhilfeVon">
+    <input type="hidden" name="telcfg:settings/Phonebook/Id" value="0" id="uiPostPhonebookId" disabled="">
+    <input type="hidden" name="telcfg:settings/Phonebook/Books/Select" value="" id="uiPostPhonebookSelect" disabled="">
+    
+    <input type="hidden" name="telcfg:settings/Phonebook/Books/Name0" value="Telephone Book" id="uiPostPhonebookName0" disabled="">
+    <input type="hidden" name="telcfg:settings/Phonebook/Books/Id0" value="0" id="uiPostPhonebookId0" disabled="">
+    
+    <input type="hidden" name="telcfg:command/$1" value="delete" id="uiPostDelete" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/enabled" value="er" id="uiPostOntelEnabled" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/username" value="er" id="uiPostOntelUsername" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/password" value="er" id="uiPostOntelPwd" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/serviceid" value="er" id="uiPostOntelServiceid" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/url" value="er" id="uiPostOntelUrl" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/pbname" value="er" id="uiPostOntelPbname" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/lastconnect" value="er" id="uiPostOntelLastconnect" disabled="">
+    <input type="hidden" name="sipextra:settings/ontel/status" value="er" id="uiPostOntelStatus" disabled="">
+    
+    <input type="hidden" name="var:EditPhonebook" value="0" id="uiPostEditPhonebook">
+    
+    </form>
+    <!-- END Post Form -->
+    
+    <form name="logoutForm" action="../cgi-bin/webcm" method="POST">
+    <input type="hidden" name="sid" value="7adce7ac18f9c42e">
+    <input type="hidden" name="security:command/logout" value="">
+    <input type="hidden" name="getpage" value="../html/confirm_logout.html">
+    </form>
+    
+    
+    </body>
+    </html>
