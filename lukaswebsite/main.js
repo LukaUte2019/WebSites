@@ -349,6 +349,9 @@ else if (cash >= 35) {
   }
 
 
+  function opengreeting() {
+    greeting(prompt('Enter Your Name'),prompt('Enter Your Last Name'));
+  }
 /**
  * Calculates three values using the provided two numbers
  * and logs the results to the console.
@@ -406,4 +409,24 @@ else if (cash >= 35) {
  */
   function calculatorprogram() {
     calculate(prompt('Enter 1 number'),prompt('Enter 2 number'),prompt('Enter / (delenje), * (mnozenje), + (sobiranje), - (odzemanje)'));
+}
+
+function Stepeni() {
+    let stepeni = prompt("Enter a number");
+    let parF = parseFloat(celsiusStepen);
+    
+    console.log(parF);
+}
+
+
+
+/**
+ * Converts given Celsius degrees to Fahrenheit degrees and alerts the result.
+ *
+ * @param {number} x - The Celsius degrees to convert.
+ */
+function stpn(x) {
+    let celsiusStepen = x * 1.8 + 32;
+    alert(celsius);
+
 }
