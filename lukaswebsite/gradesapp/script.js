@@ -30,7 +30,7 @@ function academyPanel(person, name){
       titleDiv.innerHTML += "<h1><b>Hello there " + name + "</b></h1>";
       titleDiv.innerHTML += "<p>Welcome to your student page</p>";
       contentDiv.innerHTML += "<h3>Your grades:</h3>"
-      document.title = "Students - " + name + " - Grades App";
+      document.title = name +"'s grades - Grades App";
       console.log(contentDiv);
       printGrades(subjects, grades, contentDiv);
     } else if(person === "teacher" && name.length >= 2){
