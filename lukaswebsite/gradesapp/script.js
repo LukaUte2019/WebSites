@@ -39,7 +39,7 @@ function academyPanel(person, name){
       printStudents(students, contentDiv);
     } else {
       titleDiv.innerHTML += "<h1><b>Your login was unsucessfull</b></h1>";
-      titleDiv.innerHTML += "<p>Please try again!</p>";
+      titleDiv.innerHTML += "<p>Please <a href=javascript:history.go()>try again!</a></p>";
     }
   }
 
