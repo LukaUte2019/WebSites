@@ -30,16 +30,19 @@ function academyPanel(person, name){
       titleDiv.innerHTML += "<h1><b>Hello there " + name + "</b></h1>";
       titleDiv.innerHTML += "<p>Welcome to your student page</p>";
       contentDiv.innerHTML += "<h3>Your grades:</h3>"
+      document.title = "Students - " + name + " - Grades App";
       console.log(contentDiv);
       printGrades(subjects, grades, contentDiv);
     } else if(person === "teacher" && name.length >= 2){
       titleDiv.innerHTML += `<h1><b>Hello ${name}!</b></h1>
       <p>Welcome to your teachers page</p>`;
+      document.title = `Teachers - ${name} - Grades App`;
       contentDiv.innerHTML += "<h3>Your students:</h3>"
       printStudents(students, contentDiv);
     } else {
       titleDiv.innerHTML += "<h1><b>Your login was unsucessfull</b></h1>";
       titleDiv.innerHTML += "<p>Please <a href=javascript:history.go()>try again!</a></p>";
+      document.title = "Log in failed - Grades App";
     }
   }
 
