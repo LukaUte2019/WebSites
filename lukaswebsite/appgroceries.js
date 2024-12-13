@@ -1,4 +1,4 @@
-const groceries = ['Bread', 'Milk', 'Butter'];
+const groceries = ['Bread', 'Milk', 'Butter', 'Salt', 'Chips', 'Bitolska Pavlaka', 'Balans+', 'Argeta Pashteta Kokoskina', 'Argeta Pashteta Tuna', 'Salakis', 'Knoppers', 'Tofife'];
 
 /**
  * Adds an item to the groceries list if it is a string.
@@ -11,7 +11,7 @@ const groceries = ['Bread', 'Milk', 'Butter'];
  */
 
 function addToGroceriesListPrompt() {
-    addToGroceriesList(prompt('Enter what to add in the grocery list'))
+    addToGroceriesList(prompt('Enter what to add in the grocery list'));
 }
 function addToGroceriesList(item) {
     if (typeof item === 'string') {
@@ -61,7 +61,7 @@ function deleteItemFromList(item) {
             document.write(`Deleted ${groceries[item]}`);
             groceries[index] = null;
         }
-        document.write(`Item Not Found Nothing Deleted. Current item: ${groceries[index]}`, '<br>');
+        document.write(`Item Not Found, Nothing Deleted. Current item: ${groceries[index]}`, '<br>');
         index++;
     }
     document.write("<a href=javascript:history.go()>Go Back</a>")
