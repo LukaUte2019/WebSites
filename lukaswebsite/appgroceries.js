@@ -24,8 +24,8 @@ function showGroceriesList() {
     for (let i= 0; i < groceries.length; i++) {
         document.write(`${i + 1}) ${groceries[i]}`, "<br>");
     } 
+    document.write("<a href=javascript:history.go()>Go Back</a>")
 }
-
 function findProductInList(item) {
     for (let product of groceries) {
       if (product === item) {
@@ -42,6 +42,7 @@ document.write(`Found ${foundItem}`, '<br>');
 } else {
     document.write('Not On List. On List Are:', '<br>')
 }
+document.write("<a href=javascript:history.go()>Go Back</a>")
 }
 
 function finditemalertshow() {
@@ -63,4 +64,5 @@ function deleteItemFromList(item) {
         document.write(`Item Not Found Nothing Deleted. Current item: ${groceries[index]}`, '<br>');
         index++;
     }
+    document.write("<a href=javascript:history.go()>Go Back</a>")
 }
