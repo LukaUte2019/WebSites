@@ -44,6 +44,15 @@ document.write(`Found ${foundItem}`, '<br>');
 }
 }
 
+function finditemalertshow() {
+    let foundItem = findProductInList(prompt('Enter Product Name'));
+    if (foundItem) {
+    alert(`Found ${foundItem}`);
+    } else {
+       alert('Not On List.')
+    }
+    }
+
 function deleteItemFromList(item) {
     let index = 0;
     while (index < groceries.length) {
