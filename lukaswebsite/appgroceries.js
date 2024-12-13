@@ -9,6 +9,10 @@ const groceries = ['Bread', 'Milk', 'Butter'];
  *
  * @param {string} item - The item to be added to the groceries list.
  */
+
+function addToGroceriesListPrompt() {
+    addToGroceriesList(prompt('Enter what to add in the grocery list'))
+}
 function addToGroceriesList(item) {
     if (typeof item === 'string') {
 groceries.push(item);
