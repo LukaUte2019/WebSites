@@ -7,7 +7,7 @@ const groceries = ['Bread', 'Milk', 'Butter'];
  * and if so, adds it to the groceries array. After attempting
  * to add the item, it logs the current state of the groceries list.
  *
- * @param {string} item - The item to be added to the groceries list.
+ *  * @param {string} item - The item to be added to the groceries list.
  */
 
 function addToGroceriesListPrompt() {
@@ -35,12 +35,13 @@ function findProductInList(item) {
     return null;
 }
 
-
+function finditem() {
 let foundItem = findProductInList(prompt('Enter Product Name'));
 if (foundItem) {
 document.write(`Found ${foundItem}`, '<br>');
 } else {
     document.write('Not On List. On List Are:', '<br>')
+}
 }
 
 function deleteItemFromList(item) {
