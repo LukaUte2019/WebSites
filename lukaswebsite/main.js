@@ -467,3 +467,15 @@ function appinventorFunctionHover() {
   console.log("Please use Chatbook browser or Website Browser App to view the text");
   window.AppInventor.setWebViewString('Kodular Test',fromwebsitename);
 }
+
+function warnfault(faultname) {
+alert("Please open the console to see the fault");
+console.warn(faultname);
+window.AppInventor.setWebViewString('faultshow',faultname);
+}
+
+function info(infoname) {
+  alert("Please open the console to see the info");
+  console.info(infoname);
+  window.AppInventor.setWebViewString('infoshow',infoname);
+  }
