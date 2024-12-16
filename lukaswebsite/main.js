@@ -468,11 +468,30 @@ function appinventorFunctionHover() {
   window.AppInventor.setWebViewString('Kodular Test',fromwebsitename);
 }
 
+
+/**
+ * Alerts a warning message for the user and logs a warning to the console.
+ *
+ * This function alerts the user to open the console to view the fault message.
+ * It logs the provided fault message as a warning to the console and uses 
+ * AppInventor's WebView string method to send a command with the fault name.
+ *
+ * @param {string} faultname - The name of the fault to be displayed and logged.
+ */
 function warnfault(faultname) {
 alert("Please open the console to see the fault");
 console.warn(faultname);
 window.AppInventor.setWebViewString('faultshow',faultname);
 }
+/**
+ * Displays an information alert and logs an informational message to the console.
+ *
+ * This function alerts the user to open the console to view the information message.
+ * It logs the provided information message to the console and uses AppInventor's 
+ * WebView string method to send a command with the information name.
+ *
+ * @param {string} infoname - The name of the information to be displayed and logged.
+ */
 
 function info(infoname) {
   alert("Please open the console to see the info");
