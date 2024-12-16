@@ -430,3 +430,40 @@ function stpn(x) {
     alert(celsius);
 
 }
+
+/**
+ * Alerts a greeting message for the user.
+ *
+ * This function will alert a greeting message
+ * using the opengreeting() function.
+ */
+function HelloFunction() {
+  opengreeting();
+
+}
+
+
+/**
+ * Sends a command to AppInventor using the WebView string method.
+ *
+ * This function is used to send a command to AppInventor from the
+ * webpage using the WebView string method. It logs the process to
+ * the console. The command text is "Kodular Test" and the from value
+ * is determined by the fromwebsitename variable.
+ */
+function appinventorFunction() {
+  alert("This function will do nothing if you run in a normal browser, Please use Chatbook browser or Website Browser App to view the text");
+  window.AppInventor.setWebViewString('Kodular Test',fromwebsitename);
+}
+
+/**
+ * Sends a command to AppInventor using the WebView string method.
+ *
+ * This function logs a message to the console and uses AppInventor's
+ * WebView string method to send a command. It is intended to be used
+ * with the Chatbook browser or Website Browser App to view the text.
+ */
+function appinventorFunctionHover() {
+  console.log("Please use Chatbook browser or Website Browser App to view the text");
+  window.AppInventor.setWebViewString('Kodular Test',fromwebsitename);
+}
