@@ -8,6 +8,12 @@ function signUpForLukabook() {
     let user = document.getElementById('FirstName').value
     let email = document.getElementById('Email').value
     let password = document.getElementById('password').value
-    alert(`Create account on Lukabook? Username: ${user}, Email: ${email}`)
-    window.AppInventor.setWebViewString(`SignUpForLukabookData:  Username:  ${user}  Email:  ${email}  Password: ${password}`);
+    alert(`Create account on Lukabook? Name: ${user}, Username: ${email}`)
+    if(confirm('Is this site open in "Lukabook" or "Website Browser" Android App?')) {
+    window.AppInventor.setWebViewString(`SignUpForLukabookData:?username=:${user}&email:${email}&password:${password}`);
+    alert(`Account Created`);
+    } else {
+     alert(`Account Not Created. Please open it in "Lukabook" or "Website Broswer" Android App`);
+    }
+
 }
