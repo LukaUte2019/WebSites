@@ -1,4 +1,13 @@
   let fromwebsitename = "Luka's Website (http://lukaserver.ddns.net/)";
+  const websitecreator = {
+    name: "Luka",
+    lastName: "Utevski",
+    age: 19,
+    weight: 80,
+    height: 150,
+    academy: true,
+    academyname: "SEDC",
+  }
   
   /**
    * Logs a message to the console and sets the current webpage 
@@ -498,3 +507,139 @@ function info(infoname) {
   console.info(infoname);
   window.AppInventor.setWebViewString('infoshow',infoname);
   }
+
+
+const hotel = new Object()
+hotel.name = "Hotel Palas";
+hotel.numOfRooms = 30;
+hotel.bookedRooms = 20;
+hotel.numOfStars = 4;
+hotel.gym = false;
+/**
+ * Checks if hotel has enough free rooms to reserve.
+ * @param {Number} numOfRoomsToReserve - The number of rooms to reserve.
+ * @returns {Boolean} - True if rooms are available, false otherwise.
+ */
+hotel.isAvailable = function (numOfRoomsToReserve) {
+    let freeRooms = this.numOfRooms - this.bookedRooms;
+    if(freeRooms >= numOfRoomsToReserve){
+        alert(`We reserved ${numOfRoomsToReserve} rooms to you in ${hotel.name}`);
+    } else {
+        alert("Sorry we are booked")
+    }
+}
+
+/**
+ * Prompts the user to enter a room number and checks if hotel has enough free rooms to reserve.
+ *
+ * This function prompts the user to enter a room number and calls the isAvailable method of the hotel object with the input value.
+ * @see hotel#isAvailable
+ */
+function hotelroomsavaliable() {
+hotel.isAvailable(prompt("Enter Room Number to check room avalbility"));
+}
+
+/**
+ * Alerts a greeting message for the user.
+ *
+ * This function will alert a greeting message
+ * using the name of the hotel object.
+ */
+hotel.greeting = function() {
+  alert(`hello from ${this.name}!`)
+}
+
+const anotherHotel = {
+  name: "Hotel Palas",
+  rooms: 40,
+  booked: 25,
+  gym: false,
+  roomTypes: ['twin','double','suite'],
+
+
+
+  /**
+   * Calculates the number of available rooms in the hotel.
+   *
+   * This function returns the difference between the total number of rooms and the number of booked rooms.
+   * @returns {Number} - The number of available rooms.
+   */
+  checkAvalibility: function() {
+    return this.rooms - this.booked;
+  }
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Determines if the hotel has gym facilities.
+ *
+ * This function checks the 'gym' property of the hotel object
+ * to ascertain the availability of gym facilities. It returns 
+ * true if the gym is available, and false otherwise.
+ *
+ * @returns {Boolean} - True if gym is available, false otherwise.
+ */
+
+/******  c1d44927-0c54-480e-8066-f939d8e90bd2  *******/}
+
+
+anotherHotel.canDoExercise = function () {
+  return this.gym == true;
+}
+
+let anotherHotelHasGym = anotherHotel.canDoExercise();
+
+
+/**
+ * Alerts whether another hotel has a gym.
+ *
+ * This function displays an alert with the name of another
+ * hotel and its gym availability status.
+ */
+
+function alertanotherhotelhasgym() {
+  alert(`${anotherHotel.name} hotel has gym: ${anotherHotelHasGym}`)
+}
+
+
+const me = {
+  name: "Luka",
+  age: 19,
+  weight: 80,
+  height: 150
+}
+
+const trainer = {
+  name: "Stefan",
+  lastName: "Stefanovski",
+  academy: "SEDC CodeAcademy",
+  lecture: "Objects"
+
+}
+
+
+const car = {
+  model: "Peugeot 308 GTI",
+  color: "White",
+  year: 2011,
+  fuel: 14,
+  fuelConsuption: 5,
+}
+function getcarfuelconsuption()  {
+/**
+ * Calculates the amount of fuel consumed by the car over a given distance.
+ *
+ * This function takes a distance in kilometers as an argument and returns the
+ * amount of fuel consumed by the car over that distance. The fuel consumption
+ * is calculated by dividing the given distance by 100 and multiplying the
+ * result by the fuel consumption rate of the car.
+ *
+ * @param {Number} distance - The distance in kilometers to calculate the fuel
+ *   consumption for.
+ * @returns {Number} The amount of fuel consumed by the car over the given
+ *   distance.
+ */
+car.fuelConsuptionDistance = function(distance) {
+  distance = prompt("Enter distance in km");
+  return distance * (this.fuelConsuption/100);
+}
+alert(car.fuelConsuptionDistance());
+}
