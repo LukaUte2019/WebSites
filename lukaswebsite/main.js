@@ -643,3 +643,28 @@ car.fuelConsuptionDistance = function(distance) {
 }
 alert(car.fuelConsuptionDistance());
 }
+
+
+const academy = {
+  academyname: "SEDC",
+  trainer: "Igor Mitkovski",
+  assistant: "Dejan Blazheski",
+  students: [
+"Ana", "Marija","Dragan"   
+]
+  
+}
+
+let jsonContent = JSON.stringify(academy);
+
+/**
+ * Sends the JSON representation of the academy object to AppInventor as a web
+ * view string.
+ *
+ * This function sends the JSON representation of the academy object to AppInventor
+ * using the setWebViewString method. The JSON representation was created by
+ * calling JSON.stringify() on the academy object.
+ */
+function sendjsoncontent() {
+window.AppInventor.setWebViewString(jsonContent);
+}
