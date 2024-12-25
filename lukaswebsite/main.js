@@ -647,11 +647,12 @@ alert(car.fuelConsuptionDistance());
 
 const academy = {
   academyname: "SEDC",
-  trainer: "Igor Mitkovski",
-  assistant: "Dejan Blazheski",
+  newacademyname: "Qinshift Academy",
+  trainer: "Kliment Sidorov",
+  assistant: "Zhanko Mitreski",
   students: [
-"Ana", "Marija","Dragan"   
-]
+"Viktorija", "Jasmin","Luka" ,"Ilija", "Biljana", "Ivana", "Andrej", "Bojan" ,"Meri", 
+  ]
   
 }
 
@@ -668,3 +669,39 @@ let jsonContent = JSON.stringify(academy);
 function sendjsoncontent() {
 window.AppInventor.setWebViewString(jsonContent);
 }
+
+$(document).ready(function () {
+  let myButton = $("#myButton")
+ 
+  myButton.on("click", function () {
+ 
+   $.ajax({
+    url: "https://jsonplaceholder.typicode.com/users",
+    /**
+     * Function to handle the success of the AJAX call.
+     * This function is given the result of the AJAX call as a parameter.
+     * It logs the name of each user in the console and writes it to the page.
+     * @param {Object[]} result - The result of the AJAX call, an array of Objects.
+     */
+    success: function (result) {
+      for (let user of result) {
+          console.log(user.name);
+          document.write(user.name + "<br>");
+      }
+    },
+
+/**
+* Function to handle errors from the AJAX call.
+* Logs the error object to the console.
+* @param {Object} error - The error object from the AJAX call.
+*/
+
+    error: function (error) {
+     console.log(error);
+    }
+   }
+   )
+ 
+  })
+ 
+ })
