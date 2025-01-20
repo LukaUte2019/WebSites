@@ -7,6 +7,7 @@
     height: 150,
     academy: true,
     academyname: "SEDC",
+    newacademyname: "Qinshift Academy",
   }
   
   /**
@@ -696,6 +697,12 @@ $(document).ready(function () {
 * @param {Object} error - The error object from the AJAX call.
 */
 
+/**
+ * Function to handle errors from the AJAX call.
+ * Logs the error object to the console.
+ * @param {Object} error - The error object from the AJAX call.
+ */
+
     error: function (error) {
      console.log(error);
     }
@@ -705,3 +712,27 @@ $(document).ready(function () {
   })
  
  })
+
+
+let salary = 1000;
+const salaryAmount = 1000;
+const rent = 10;
+const bills = 250;
+
+function pay(amount) {
+    salary = salary - amount;
+    console.log(salary);
+    return salary;
+}
+
+function enterpayrent() {
+    pay(prompt("Enter your rent amount"));
+    viewleftsalary();
+    
+}
+
+function viewleftsalary() {
+let totalExpenses = salaryAmount - salary;
+  alert(`You have ${salary} left`);
+  console.log(totalExpenses);
+}
