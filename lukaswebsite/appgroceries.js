@@ -1,5 +1,5 @@
-const groceries = ['Bread', 'Milk', 'Butter', 'Salt', 'Chips', 'Bitolska Pavlaka', 'Balans+', 'Argeta Pashteta Kokoskina', 'Argeta Pashteta Tuna', 'Salakis', 'Knoppers', 'Tofife'];
-
+const groceries = ['Bread', 'Milk', 'Butter', 'Salt', 'Chips', 'Bitolska Pavlaka', 'Balans+', 'Argeta Pashteta Kokoskina', 'Argeta Pashteta Tuna', 'Salakis', 'Knoppers', 'Tofife']
+let groceriescookie = "['Bread', 'Milk', 'Butter', 'Salt', 'Chips', 'Bitolska Pavlaka', 'Balans+', 'Argeta Pashteta Kokoskina', 'Argeta Pashteta Tuna', 'Salakis', 'Knoppers', 'Tofife'];"
 /**
  * Adds an item to the groceries list if it is a string.
  *
@@ -16,7 +16,9 @@ function addToGroceriesListPrompt() {
 function addToGroceriesList(item) {
     if (typeof item === 'string') {
 groceries.push(item);
+document.cookie = "Groceries" + "=" + groceries + ";" + "expires" + ";path=/";
 }
+alert(`item ${item} added`);
 console.log(groceries);
 }
 function showGroceriesList() {
@@ -66,3 +68,50 @@ function deleteItemFromList(item) {
     }
     document.write("<a href=javascript:history.go()>Go Back</a>")
 }
+
+/**
+ * Gets the value of a cookie by name.
+ *
+ * @param {string} cname - The name of the cookie to get.
+ * @returns {string} The value of the cookie, or an empty string if the cookie does not exist.
+ */
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c;
+      }
+    }
+    return "";
+  }
+
+groceries = getCookie("Groceries");
+
+
+function getCookie1(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    return ca;
+  }
