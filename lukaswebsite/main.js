@@ -463,7 +463,7 @@ function HelloFunction() {
  */
 function appinventorFunction() {
   alert("This function will do nothing if you run in a normal browser, Please use Chatbook browser or Website Browser App to view the text");
-  window.AppInventor.setWebViewString('Kodular Test',fromwebsitename);
+  window.AppInventor.setWebViewString(`Kodular Test ${fromwebsitename}`);
 }
 
 /**
@@ -475,7 +475,7 @@ function appinventorFunction() {
  */
 function appinventorFunctionHover() {
   console.log("Please use Chatbook browser or Website Browser App to view the text");
-  window.AppInventor.setWebViewString('Kodular Test',fromwebsitename);
+  window.AppInventor.setWebViewString(`Kodular Test ${fromwebsitename}`);
 }
 
 
@@ -735,4 +735,22 @@ function viewleftsalary() {
 let totalExpenses = salaryAmount - salary;
   alert(`You have ${salary} left`);
   console.log(totalExpenses);
+}
+
+
+function calculation(input) {
+  switch (input) {
+      case "+":
+          return function(number1, number2) {
+             return number1 + number2;
+          }
+          case "-":
+              return function(number1, number2) {
+                  return number1 - number2;
+              }
+
+          default:
+              console.log("Invalid operator");
+              return null;
+  }
 }
