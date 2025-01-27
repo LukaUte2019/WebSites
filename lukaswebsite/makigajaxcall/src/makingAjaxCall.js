@@ -64,6 +64,7 @@ $(document).ready(function () {
             console.log(user.name);
             document.write(user.name + "<br>");
         }
+        document.write("<a href=javascript:history.go()>Back</a>");
       },
 
 /**
@@ -89,7 +90,7 @@ $(document).ready(function () {
     myButton1.on("click", function () {
    
      $.ajax({
-      url: "https://swapi.tech/api/people/" + prompt('Enter a person number'),
+      url: "https://swapi.tech/api/people/" + prompt('Enter a person Number'),
       /**
        * Function to handle the success of the AJAX call.
        * This function is given the result of the AJAX call as a parameter.
