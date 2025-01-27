@@ -29,14 +29,15 @@ I'm a passionate developer with a keen interest in web development, open-source 
 ## 📚 Projects
 Here are a few projects I've been working on:
 
-### [Project 1: Awesome Web App](https://github.com/LukaUte2019/awesome-web-app)
+Here are a few projects I've been working on:
+### [Project 1: Lukabook](https://github.com/LukaUte2019/Lukabook)
 A web application built with React and Node.js that allows users to create and manage their tasks efficiently.
 
-### [Project 2: Python Data Analysis](https://github.com/LukaUte2019/python-data-analysis)
-A collection of Python scripts and Jupyter notebooks for data analysis and visualization.
+### [Project 2: Websites](https://github.com/LukaUte2019/WebSites)
+Websites for [My website](http://lukaserver.ddns.net)
 
-### [Project 3: Java Spring Boot API](https://github.com/LukaUte2019/spring-boot-api)
-A RESTful API built with Java and Spring Boot, featuring CRUD operations and JWT authentication.
+### [Project 3: Instagram clone](https://github.com/LukaUte2019/Instagram-clone-fix)
+An Instagram-clone with my own flavors and features. Own the project with 5 simple steps!! 📸💝☢️ - No longer maintained.
 
 ## 💬 Let's Connect!
 Feel free to reach out to me if you want to collaborate on a project, ask a question, or just say hi!
