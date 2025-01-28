@@ -754,3 +754,32 @@ function calculation(input) {
               return null;
   }
 }
+
+
+
+
+/**
+ * Toggles the webpage to dark mode styling.
+ *
+ * This function changes the background color of the body to black
+ * and changes the text color of the body to white.
+ */
+
+function darkMode() {
+  document.body.style.backgroundColor = "black";
+  document.body.style.color = "white";
+  return "Dark mode enabled";
+}
+
+
+/**
+ * Toggles the webpage to light mode styling.
+ *
+ * This function changes the background color of the body to white
+ * and changes the text color of the body to black.
+ */
+function lightMode() {
+  document.body.style.backgroundColor = "white";
+  document.body.style.color = "black";
+  return "Light mode enabled";
+}
