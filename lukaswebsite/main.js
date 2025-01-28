@@ -768,7 +768,7 @@ function calculation(input) {
 function darkMode() {
   document.body.style.backgroundColor = "black";
   document.body.style.color = "white";
-  return "Dark mode enabled";
+  return "toastnotif Dark mode enabled";
 }
 
 
@@ -781,5 +781,5 @@ function darkMode() {
 function lightMode() {
   document.body.style.backgroundColor = "white";
   document.body.style.color = "black";
-  return "Light mode enabled";
+  return "toastnotif Light mode enabled";
 }
