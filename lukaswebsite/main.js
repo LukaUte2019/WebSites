@@ -783,3 +783,27 @@ function lightMode() {
   document.body.style.color = "black";
   return "toastnotif Light mode enabled";
 }
+
+/**
+ * Toggles the webpage to dark mode styling.
+ *
+ * This function changes the background color of the body to black
+ * and changes the text color of the body to white.
+ */
+
+function darkModenoreturn() {
+  document.body.style.backgroundColor = "black";
+  document.body.style.color = "white";
+}
+
+
+/**
+ * Toggles the webpage to light mode styling.
+ *
+ * This function changes the background color of the body to white
+ * and changes the text color of the body to black.
+ */
+function lightModenoreturn() {
+  document.body.style.backgroundColor = "white";
+  document.body.style.color = "black";
+}
