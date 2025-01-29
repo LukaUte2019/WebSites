@@ -71,5 +71,5 @@ function lightModenoreturn() {
 function toggledarkmode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
-  console.log("toastnotif Dark mode enabled or disabled");
+  console.log("toastnotif Dark mode toggled");
 }
