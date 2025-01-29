@@ -1,3 +1,6 @@
+const { resolveNaptr } = require("dns");
+const { ready } = require("jquery");
+
   let fromwebsitename = "Luka's Website (http://lukaserver.ddns.net/)";
   const websitecreator = {
     name: "Luka",
@@ -754,3 +757,22 @@ function calculation(input) {
               return null;
   }
 }
+
+function decreasingNumbers(n) {
+  let interval = setInterval(() => {
+    console.log(n);
+    n--;
+    if(n == 0 ) {
+       clearInterval(interval);
+      }
+  }, 1000);
+ }
+
+ setInterval(() => {
+  let date = new Date();
+
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+}, 1000);
