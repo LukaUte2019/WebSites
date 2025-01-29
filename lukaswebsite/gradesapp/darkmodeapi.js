@@ -1,3 +1,7 @@
+// This file contains the functions that are used to toggle the webpage to dark mode or light mode, or to turn on and off dark mode.
+// Add it in the html file as darkmodeapi.js. example: <script src="darkmodeapi.js"></script>
+
+
 /**
  * Toggles the webpage to dark mode styling.
  *
