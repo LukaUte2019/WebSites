@@ -80,29 +80,3 @@ function academyPanel(person, name){
 let input = prompt("Are you a student or a teacher?");
 let name = prompt("What is your name?");
 academyPanel(input, name);
-
-/**
- * Toggles the webpage to dark mode styling.
- *
- * This function changes the background color of the body to black
- * and changes the text color of the body to white.
- */
-
-function darkMode() {
-  document.body.style.backgroundColor = "black";
-  document.body.style.color = "white";
-  return "toastnotif Dark mode enabled";
-}
-
-
-/**
- * Toggles the webpage to light mode styling.
- *
- * This function changes the background color of the body to white
- * and changes the text color of the body to black.
- */
-function lightMode() {
-  document.body.style.backgroundColor = "white";
-  document.body.style.color = "black";
-  return "toastnotif Light mode enabled";
-}
