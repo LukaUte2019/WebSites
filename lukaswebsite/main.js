@@ -767,8 +767,7 @@ function decreasingNumbers(n) {
       }
   }, 1000);
  }
-
- setInterval(() => {
+  setInterval(() => {
   let date = new Date();
 
   let hours = date.getHours();
@@ -776,3 +775,25 @@ function decreasingNumbers(n) {
   let seconds = date.getSeconds();
   document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
 }, 1000);
+
+
+function complex() {
+	setTimeout(function () {
+		console.log('1. First thing, preparing for the second');
+		setTimeout(function () {
+			console.log('2. Second thing, preparing for the third');
+			setTimeout(function () {
+				console.log('3. Third thing, preparing for the forth');
+				setTimeout(function () {
+					console.log('4. Forth thing, preparing for the fifth');
+					setTimeout(function () {
+						console.log('5. Fifth thing, preparing for the Sixth');
+						setTimeout(function () {
+							console.log('6. Sixth and last thing');
+						}, 2000);
+					}, 2000);
+				}, 2000);
+			}, 2000);
+		}, 2000);
+	}, 2000);
+};
