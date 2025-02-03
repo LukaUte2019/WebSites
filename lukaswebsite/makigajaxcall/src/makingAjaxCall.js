@@ -45,9 +45,10 @@ $(document).ready(function () {
     let myButton = $("#myButton")
    
     myButton.on("click", function () {
-   
+      console.log("Loading URL: http://lukaserver.ddns.net:3000/registeredUsers");
      $.ajax({
-      url: "https://jsonplaceholder.typicode.com/users",
+      
+      url: "http://lukaserver.ddns.net:3000/registeredUsers",
       /**
        * Function to set the User-Agent header before making the AJAX call.
        * @param {Object} req - The request object to set the header on.
@@ -61,8 +62,8 @@ $(document).ready(function () {
        */
       success: function (result) {
         for (let user of result) {
-            console.log(user.name);
-            document.write(user.name + "<br>");
+            console.log(user.fullName);
+            document.write(user.fullName + "<br>");
         }
         document.write("<a href=javascript:history.go()>Back</a>");
       },
