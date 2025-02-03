@@ -797,3 +797,8 @@ function complex() {
 		}, 2000);
 	}, 2000);
 };
+
+function logwindowfunction() {
+  console.log(window);
+  alert("Check the console for the window object");
+}
