@@ -19,15 +19,13 @@ function loadvideos() {
        */
 
       success: function (result) {
-        for (let user of result) {
-            videos.push(`<p>${user.videoname}<p>`);
-            videos.push(`<video width="320" height="240" controls="" src=${user.videourl}></video>`);
-            document.getElementById('video-container').innerHTML = videos
+        for (let videosfound of result) {
+            // videos.push(`<p>${ videosfound.videoname}<p>`);
+            // videos.push(`<video width="320" height="240" controls="" src=${ videosfound.videourl}></video>`);
+            videos.push(`<p>${videosfound.videoname}<p>`);
+            videos.push(`<a href="${videosfound.videourl}"><img src="${videosfound.thumbnail}" alt="" width="320" height="240"></a>`);
 
-            // videocontainer.push(`<video width="320" height="240" controls="" src=${user.videourl}></video>`);
-            // document.getElementById("videocontainer").innerHTML = videocontainer
-            // document.write(`<h1>${user.videoname}</h1>`);
-            // document.write(`<video width="320" height="240" controls="" src=${user.videourl}></video>`);
+            document.getElementById('video-container').innerHTML = videos
         }
       },
 

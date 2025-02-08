@@ -18,10 +18,14 @@ function loaduploads() {
      */
 
     success: function (result) {
-      for (let user of result) {
-        uploads.push(`<p>${user.videoname}<p>`);
-        uploads.push(`<video width="320" height="240" controls="" src=${user.videopath}></video>`);
-        document.getElementById('video-container').innerHTML = uploads
+      for (let videosfound of result) {
+        // uploads.push(`<p>${videosfound.videoname}<p>`);
+        // uploads.push(`<video width="320" height="240" controls="" src=${videosfound.videopath}></video>`);
+        // document.getElementById('video-container').innerHTML = uploads
+      uploads.push(`<p>${videosfound.videoname}<p>`);
+      uploads.push(`<a href="${videosfound.videopath}"><img src="${videosfound.thumbnail}" alt="" width="320" height="240"></a>`);
+      uploads.push(`<p>${videosfound.ltchannel}<p>`);
+      document.getElementById('video-container').innerHTML = uploads
       }
     },
 
