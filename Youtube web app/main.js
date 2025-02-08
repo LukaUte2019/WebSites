@@ -24,6 +24,7 @@ function loadvideos() {
             // videos.push(`<video width="320" height="240" controls="" src=${ videosfound.videourl}></video>`);
             videos.push(`<p>${videosfound.videoname}<p>`);
             videos.push(`<a href="${videosfound.videourl}"><img src="${videosfound.thumbnail}" alt="" width="320" height="240"></a>`);
+            videos.push(`<p>${videosfound.ltchannel}<p>`);
 
             document.getElementById('video-container').innerHTML = videos
         }
