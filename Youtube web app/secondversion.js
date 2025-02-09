@@ -37,6 +37,9 @@ function loaduploads() {
 
     error: function (error) {
      console.log(error);
+     if(confirm("Error loading uploaded videos. This may be because there is no internet connection or the port 81 is blocked by your ISP or a firewall on a WI-Fi access point. Would you like to try again? View the error code in Console (CTRL+SHIFT+I)")) {
+      loadvideos();
+    }
     }
    }
    )
