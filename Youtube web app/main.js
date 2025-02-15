@@ -22,9 +22,9 @@ function loadvideos() {
         for (let videosfound of result) {
             // videos.push(`<p>${ videosfound.videoname}<p>`);
             // videos.push(`<video width="320" height="240" controls="" src=${ videosfound.videourl}></video>`);
-            videos.push(`<p>${videosfound.videoname}<p>`);
-            videos.push(`<a href="${videosfound.videourl}"><img src="${videosfound.thumbnail}" alt="Thumbnail for ${videosfound.videoname}" width="320" height="240"></a>`);
-            videos.push(`<p>${videosfound.ltchannel}<p>`);
+            videos.push(`<p>${videosfound.artistansongmname}<p>`);
+            videos.push(`<a href="${videosfound.videourl}"><img src="${videosfound.thumbnail}" alt="Thumbnail for ${videosfound.artistansongmname}" width="320" height="240"></a>`);
+            videos.push(`<p>${videosfound.artistName}<p>`);
 
             document.getElementById('video-container').innerHTML = videos
         }
