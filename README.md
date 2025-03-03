@@ -29,7 +29,7 @@ I'm a passionate developer with a keen interest in web development, open-source 
 ## 📚 Projects
 Here are a few projects I've been working on:
 ### [Project 1: Lukabook](https://github.com/LukaUte2019/Lukabook)
-# Lukabook
+Lukabook
 <b>Feed Posts</b>
 
 There is a feed in this app. Follow someone by searching their username and refresh the feed to see their posts.
