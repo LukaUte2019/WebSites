@@ -28,10 +28,16 @@ I'm a passionate developer with a keen interest in web development, open-source 
 
 ## 📚 Projects
 Here are a few projects I've been working on:
-
-Here are a few projects I've been working on:
 ### [Project 1: Lukabook](https://github.com/LukaUte2019/Lukabook)
-A web application built with React and Node.js that allows users to create and manage their tasks efficiently.
+# Lukabook
+<b>Feed Posts</b>
+
+There is a feed in this app. Follow someone by searching their username and refresh the feed to see their posts.
+
+<b>Message Anyone With Chat App</b>
+
+You can message people who use the app and Encrypted SMS
+
 
 ### [Project 2: Websites](https://github.com/LukaUte2019/WebSites)
 Websites for [My website](http://lukaserver.ddns.net)
