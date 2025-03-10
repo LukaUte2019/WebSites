@@ -1,11 +1,23 @@
 let videos = [];
+loadOnlineAPI = false;
+// Function to load the video from the API.
+async function loadvideos() {
 
+	if (loadOnlineAPI) {
+    console.log("Loading URL: http://lukaserver.ddns.net:81/videos");
+    loadvideosajax("http://lukaserver.ddns.net:81/videos");
+	    
+	} else {
+    console.log("Loading URL: ./videos.json");
+    loadvideosajax("./videos.json");
+	}
+}
 
-function loadvideos() {
-      console.log("Loading URL: http://lukaserver.ddns.net:81/videos");
+function loadvideosajax(link) {
+      console.log(`Loading URL: ${link}`);
      $.ajax({
       
-      url: "http://lukaserver.ddns.net:81/videos",
+      url: `${link}`,
       /**
        * Function to set the User-Agent header before making the AJAX call.
        * @param {Object} req - The request object to set the header on.
@@ -24,7 +36,9 @@ function loadvideos() {
             // videos.push(`<video width="320" height="240" controls="" src=${ videosfound.videourl}></video>`);
             videos.push(`<p>${videosfound.artistansongmname}<p>`);
             videos.push(`<a href="${videosfound.videourl}"><img src="${videosfound.thumbnail}" alt="Thumbnail for ${videosfound.artistansongmname}" width="320" height="240"></a>`);
+            let videoUrl = `http://lukaserver.ddns.net/lukatubeshare/openVideo.php?image=${videosfound.thumbnail}&artistname=${videosfound.artistansongmname}&songname=${videosfound.artistansongmname}&videourl=${videosfound.videourl}`;
             videos.push(`<p>${videosfound.artistName}<p>`);
+            videos.push(`<a href="${videoUrl}">Share Video ${videosfound.artistansongmname}</a>`);
 
             document.getElementById('video-container').innerHTML = videos
         }
